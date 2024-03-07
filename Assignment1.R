@@ -42,6 +42,7 @@ mu_1<-1
 sigma_0<-3
 sigma_1<-2
 sigma_01<-0
+sigma_v<-1
 c<-0
 
 # Load the data.table package
@@ -74,7 +75,5 @@ E_w0 <- mean(mu_0+epsilon$epsilon0[I == 0])
 E_w1 <- mean(mu_1+epsilon$epsilon1[I == 1])
 E_e0 <- mean(epsilon$epsilon0[I == 0])
 E_e1 <- mean(epsilon$epsilon1[I == 1])
-
-
 
 
