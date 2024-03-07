@@ -76,4 +76,3 @@ E_w1 <- mean(mu_1+epsilon$epsilon1[I == 1])
 E_e0 <- mean(epsilon$epsilon0[I == 0])
 E_e1 <- mean(epsilon$epsilon1[I == 1])
 
-
