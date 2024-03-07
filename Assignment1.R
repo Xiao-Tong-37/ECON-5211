@@ -1,17 +1,14 @@
-<<<<<<< HEAD
+
 #3.4
-=======
->>>>>>> 7f67a1bf2fdd99b8b72b4ca634f3bafc6e164af2
 library(ggplot2)
-ggplot2
 data=read.csv("psfd_ri1999_v202110_csv.csv",header=TRUE)
 age<-1999-data$a02-1911
 work<-data$c01
 
 
-for (i in c(1:length(data$c01))) {
-  if(data$c01[i]==2){
-    data$c01[i]<-0
+for (i in c(1:length(work))) {
+  if(work[i]==2){
+    work[i]<-0
   }
 }
 
@@ -35,7 +32,6 @@ ggplot(data = data_agerate) +
 ggsave(
   filename = "Rate_of_Working.png", 
 )
-<<<<<<< HEAD
 
 #4.2
 
@@ -79,6 +75,3 @@ E_w0 <- mean(mu_0+epsilon$epsilon0[I == 0])
 E_w1 <- mean(mu_1+epsilon$epsilon1[I == 1])
 E_e0 <- mean(epsilon$epsilon0[I == 0])
 E_e1 <- mean(epsilon$epsilon1[I == 1])
-
-=======
->>>>>>> 7f67a1bf2fdd99b8b72b4ca634f3bafc6e164af2
