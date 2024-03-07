@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 #3.4
+=======
+>>>>>>> 7f67a1bf2fdd99b8b72b4ca634f3bafc6e164af2
 library(ggplot2)
 ggplot2
 data=read.csv("psfd_ri1999_v202110_csv.csv",header=TRUE)
@@ -32,6 +35,7 @@ ggplot(data = data_agerate) +
 ggsave(
   filename = "Rate_of_Working.png", 
 )
+<<<<<<< HEAD
 
 #4.2
 
@@ -76,3 +80,5 @@ E_w1 <- mean(mu_1+epsilon$epsilon1[I == 1])
 E_e0 <- mean(epsilon$epsilon0[I == 0])
 E_e1 <- mean(epsilon$epsilon1[I == 1])
 
+=======
+>>>>>>> 7f67a1bf2fdd99b8b72b4ca634f3bafc6e164af2
